@@ -1,0 +1,327 @@
+
+body {
+   background-color: paleturquoise;
+}
+
+.firsrbox {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    
+    animation-name: firstbox;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+  
+
+}
+@keyframes firstbox {
+    0% {
+      transform: skewX(0deg);
+    }
+    25% {
+      transform: skewx(30deg);
+    }
+    75% {
+      transform: skewX(-30deg);
+    }
+    100% {
+      tranform: skewX(0deg);
+    }
+  }
+
+
+    
+
+.first-list {
+    
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+.secoundbox {
+    width: 150px;
+    height: 150px;
+    background-color:white;
+    animation-name: secoundbox;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite
+
+}
+@keyframes secoundbox {
+    0% {
+      transform: skewY(0deg);
+    }
+    25% {
+      transform: skewY(20deg);
+    }
+    75% {
+      transform: skewY(-20deg);
+    }
+    100% {
+      tranform: skewY(0deg);
+    }
+  }
+.list2 {
+    
+    
+    display: flex;
+    justify-content:space-evenly;
+    
+    margin-top: 50px;
+}
+
+.listthree {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+
+
+}
+.thirdbox {
+    width: 150px;
+    height: 150px;
+    background-color:red;
+    margin-top: 50px;
+    animation-name: thirdbox;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    
+
+}
+@keyframes thirdbox {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes fourth1-row {
+    50% {
+      transform: scaleY(50%);
+    }
+  }
+  @keyframes fourth2-row {
+    50% {
+      transform: scaleX(50%);
+    }
+  }
+.forthbox {
+    width: 150px;
+    height: 150px;
+    background-color:orange;
+    
+}
+.listforth {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    
+}
+.forthfirst {
+    animation-name:forthfirst ;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes forthfirst {
+    50% {
+      transform: scaleY(50%);
+    }
+  }
+  .forthsecound {
+    animation-name: forthsecound;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  @keyframes forthsecound {
+    50% {
+      transform: scaleX(50%);
+    }
+  }
+  .forththird {
+    animation-name: forththird;
+    animation-duration: 5s;
+    
+    animation-iteration-count: infinite;
+  }
+  @keyframes forththird {
+    50% {
+      transform: rotate(100deg);
+    }
+  }
+  .anchor1 {
+      text-align: center;
+      margin-left: 400px;
+      text-decoration: none;
+      padding: auto;
+      color:palevioletred;
+      font-size: 20px;
+      text-align: center;
+
+    
+  }
+  .secoundpagelist {
+    margin-left: 500px;
+    padding: auto;
+    width: 0px;
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: auto;
+    background-color:rgba(24, 180, 154, 0.616);
+  }
+  .box1 {
+    transition: width 2s;
+  }
+  .box1:hover {
+    width: 300px;
+  }
+  .box2 {
+    transition: width 2s, height 2s;
+  }
+  .box2:hover {
+    width: 300px;
+    height: 300px;
+  }
+  .box3 {
+    transition: width 2s linear;
+  }
+  .box3:hover {
+    width: 300px;
+  }
+  .box4 {
+    transition: width 2s ease;
+  }
+  .box4:hover {
+    width: 300px;
+  }
+  .box5 {
+    transition: width 2s ease-in;
+  }
+  .box5:hover {
+    width: 300px;
+  }
+  .box6 {
+    transition: width 2s ease-out;
+  }
+  .box6:hover {
+    width: 300px;
+  }
+  .box7 {
+    transition: width 2s ease-in-out;
+  }
+  .box7:hover {
+    width: 300px;
+  }
+  .happy {
+      background-color: orange;
+  }
+  .happy {
+      background-color: orange;
+      .happy 
+  }
+  .sky{
+    height: 100vh;
+    width:100%;
+    background-image: url("./sky.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    background-size: 1400px;
+    background-repeat: no-repeat;
+}
+.road{
+    height: 200px;
+    width:500%;
+    display: block;
+    background-image: url("./road.jpeg");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: road 8s linear infinite;
+}
+
+.city{
+    height:250px;
+    width: 500%;
+    background-image:url("./newcity.png") ;
+    position: absolute;
+    bottom: 200px;
+ 
+    display: block;
+    z-index:1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+
+.car{
+    width: 400px;
+    left:50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.car img{
+    width:100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+.wheel{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    animation: circle 1s linear infinite;
+}
+.wheel img{
+    width:70px ;
+    height:70px ;
+}
+.back{
+  left: -165px;
+  position: absolute;
+}
+.front{
+  left: 80px;
+  position: absolute;
+}
+@keyframes circle{
+    100%{
+        transform: rotate(-360 deg);
+    }
+}
+
+@keyframes  road{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+ 
+
+      
+  
+
+  
+  
